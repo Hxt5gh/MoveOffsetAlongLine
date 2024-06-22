@@ -39,6 +39,7 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import com.hxt5gh.movealongthepath.Animation.LazyColumnAnimation
 import com.hxt5gh.movealongthepath.Animation.PointAlongPathAnimation
+import com.hxt5gh.movealongthepath.Animation.ScreenLoaders
 import com.hxt5gh.movealongthepath.ui.theme.MoveAlongThePathTheme
 import kotlinx.coroutines.launch
 import kotlin.math.PI
@@ -55,7 +56,8 @@ class MainActivity : ComponentActivity() {
             MoveAlongThePathTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                    // PointAlongPathAnimation(modifier = Modifier.fillMaxSize().padding(innerPadding))
-                    LazyColumnAnimation()
+                  // LazyColumnAnimation()
+                    ScreenLoaders(modifier = Modifier.fillMaxSize().padding(innerPadding))
                 }
             }
         }
