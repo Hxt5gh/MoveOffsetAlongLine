@@ -20,6 +20,7 @@ import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -37,6 +38,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
+import com.hxt5gh.movealongthepath.Animation.DatingDrag
 import com.hxt5gh.movealongthepath.Animation.LazyColumnAnimation
 import com.hxt5gh.movealongthepath.Animation.PointAlongPathAnimation
 import com.hxt5gh.movealongthepath.Animation.ScreenLoaders
@@ -54,10 +56,11 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MoveAlongThePathTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Surface(modifier = Modifier.fillMaxSize()) {
                    // PointAlongPathAnimation(modifier = Modifier.fillMaxSize().padding(innerPadding))
                   // LazyColumnAnimation()
-                    ScreenLoaders(modifier = Modifier.fillMaxSize().padding(innerPadding))
+                  //  ScreenLoaders(modifier = Modifier.fillMaxSize().padding(innerPadding))
+                         DatingDrag(modifier = Modifier.fillMaxSize())
                 }
             }
         }
