@@ -40,6 +40,7 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import com.hxt5gh.movealongthepath.Animation.DatingDrag
 import com.hxt5gh.movealongthepath.Animation.LazyColumnAnimation
+import com.hxt5gh.movealongthepath.Animation.MovingToTheWidth
 import com.hxt5gh.movealongthepath.Animation.PointAlongPathAnimation
 import com.hxt5gh.movealongthepath.Animation.ScreenLoaders
 import com.hxt5gh.movealongthepath.ui.theme.MoveAlongThePathTheme
@@ -60,7 +61,9 @@ class MainActivity : ComponentActivity() {
                    // PointAlongPathAnimation(modifier = Modifier.fillMaxSize().padding(innerPadding))
                   // LazyColumnAnimation()
                   //  ScreenLoaders(modifier = Modifier.fillMaxSize().padding(innerPadding))
-                         DatingDrag(modifier = Modifier.fillMaxSize())
+                  //       DatingDrag(modifier = Modifier.fillMaxSize())
+
+                    MovingToTheWidth()
                 }
             }
         }
