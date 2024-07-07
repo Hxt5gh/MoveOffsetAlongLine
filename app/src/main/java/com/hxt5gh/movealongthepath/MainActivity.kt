@@ -39,6 +39,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import com.hxt5gh.movealongthepath.Animation.DatingDrag
+import com.hxt5gh.movealongthepath.Animation.Gravity
 import com.hxt5gh.movealongthepath.Animation.LazyColumnAnimation
 import com.hxt5gh.movealongthepath.Animation.MovingToTheWidth
 import com.hxt5gh.movealongthepath.Animation.PointAlongPathAnimation
@@ -63,7 +64,8 @@ class MainActivity : ComponentActivity() {
                   //  ScreenLoaders(modifier = Modifier.fillMaxSize().padding(innerPadding))
                   //       DatingDrag(modifier = Modifier.fillMaxSize())
 
-                    MovingToTheWidth()
+                   // MovingToTheWidth()
+                    Gravity()
                 }
             }
         }
